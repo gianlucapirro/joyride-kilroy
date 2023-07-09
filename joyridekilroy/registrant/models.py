@@ -6,7 +6,7 @@ class Registrant(models.Model):
     last_name = models.CharField(max_length=50)
     email = models.EmailField(max_length=254, unique=True)
     phone = models.CharField(max_length=255, blank=True, default="", unique=True)
-    roadtrip = models.CharField(max_length=1000)
+    roadtrip = models.CharField(max_length=3500)
     email_friend1 = models.EmailField(max_length=254)
     email_friend2 = models.EmailField(max_length=254)
 
